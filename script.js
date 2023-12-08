@@ -88,7 +88,6 @@ const deleteData = (del) =>{
   del.parentElement.parentElement.remove()
   data.splice(del.parentElement.parentElement.id , 1)
   localStorage.setItem("data" , JSON.stringify(data))
-
 }
 
 
@@ -100,6 +99,5 @@ const editData = (edit) => {
   dateInput.value = task.children[1].innerHTML;
   textarea.value = task.children[2].innerHTML;
 
-  
- deleteData(del)
+  deleteData(del)
 }
